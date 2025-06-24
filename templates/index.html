@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>นับเม็ดยา</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 1rem; }
+    video { width: 100%; max-width: 500px; border: 1px solid #ccc; }
+    button { font-size: 1.2rem; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h2>กล้องนับเม็ดยา</h2>
+  <video id="video" autoplay playsinline></video><br>
+  <button onclick="captureAndSend()">📸 นับเม็ดยา</button>
+  <p id="result">จำนวนเม็ดยา: -</p>
+  <canvas id="canvas" style="display:none;"></canvas>
+  <script src="/static/script.js"></script>
+</body>
+</html>
